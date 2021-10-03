@@ -1,0 +1,65 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://MenuScript.gd" type="Script" id=1]
+[ext_resource path="res://un.png" type="Texture" id=2]
+[ext_resource path="res://logopost.png" type="Texture" id=3]
+[ext_resource path="res://logopre.png" type="Texture" id=4]
+[ext_resource path="res://quit.png" type="Texture" id=5]
+[ext_resource path="res://play.png" type="Texture" id=6]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LogoPre" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 3.20288, 2.86943 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LogoPost" type="TextureRect" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 3.20288, 2.86943 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Un" type="TextureRect" parent="."]
+anchor_left = -0.213
+anchor_top = -0.183
+margin_left = 218.112
+margin_top = -202.88
+margin_right = 320.0
+margin_bottom = -160.0
+rect_rotation = 45.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Play" type="Button" parent="."]
+margin_left = 378.0
+margin_top = 320.0
+margin_right = 646.0
+margin_bottom = 360.0
+icon = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit" type="Button" parent="."]
+margin_left = 378.0
+margin_top = 400.0
+margin_right = 646.0
+margin_bottom = 440.0
+icon = ExtResource( 5 )
